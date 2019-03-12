@@ -24,8 +24,6 @@ npm run build
 ```
 npm run lint
 ```
-
-啊哈哈哈
 =======
 # webapp
 >>>>>>> d70f625f38b9ba45f6bc7b68f13eee81e2b3e590
