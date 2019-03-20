@@ -12,29 +12,29 @@ Vue.use(VueRouter);
 //配置路由
 const routes = [
     {
-        path:'/home',
+        path:'/list',
         meta:{
-            title:'首页'
+            title:'商品列表'
         },
-        component:()=>import('../views/index.vue')
+        component:()=>import('../views/list.vue')
     },
     {
-        path:'/about',
+        path:'/product/:id',
         meta:{
-            title:'关于'
+            title:'商品详情'
         },
-        component:()=>import('../views/about.vue')
+        component:()=>import('../views/product.vue')
     },
     {
-        path:'/user/:cid',
+        path:'/cart',
         meta:{
-            title:'个人主页'
+            title:'购物车'
         },
-        component:()=>import('../views/user.vue')
+        component:()=>import('../views/cart.vue')
     },
     {
         path:'*',
-        redirect:'/home'
+        redirect:'/list'
     },
 ];
 
